@@ -22,13 +22,70 @@
 	        android:layout_span="3"
 	        android:inputType="number"
 	        android:layout_weight="1"
+		    android:lines="5"
+    		android:gravity="top|left"	        
 	        >
 	        <requestFocus/>
 	    </EditText>        
     </TableRow>
-    
+
 	<TableRow
 		android:id="@+id/firstBtnRow"	     
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ccddee"
+        android:layout_weight="1"
+        >
+
+	    <Button
+	    	android:id="@+id/btnRB"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:background="#dddccc"
+			android:layout_marginLeft="3dp"
+	    	android:text="("
+	    	/>	    
+	    <Button
+	    	android:id="@+id/btnLB"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:background="#dddccc"
+			android:layout_marginLeft="3dp"
+	    	android:text=")"
+	    	/>
+	    <Button
+	    	android:id="@+id/btnUndo"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="0.25"
+	    	android:background="#dddccc"
+	    	android:layout_marginLeft="3dp"
+	    	android:text="\u2190"
+		    />
+	   	<Button
+	    	android:id="@+id/btnClear"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="0.25"
+	    	android:background="#dddccc"
+	    	android:layout_marginLeft="3dp"
+	    	android:text="\u00A9"
+		    />	 
+	   	<Button
+	    	android:id="@+id/btnResult"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="0.25"
+	    	android:background="#dddccc"
+	    	android:layout_marginLeft="3dp"
+	    	android:text="="
+		    />	   	    
+    </TableRow>     
+    
+	<TableRow
+		android:id="@+id/secondBtnRow"	     
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#ccddee"
@@ -69,12 +126,21 @@
 	    	android:layout_weight="0.25"
 	    	android:background="#dddccc"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="/"
-		    />	   	    
+	    	android:text="\u00F7"
+		    />	 
+	   	<Button
+	    	android:id="@+id/btnRaiz"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="0.25"
+	    	android:background="#dddccc"
+	    	android:layout_marginLeft="3dp"
+	    	android:text="\u221A"
+		    />			      	    
     </TableRow> 
 
 	<TableRow 
-	    android:id="@+id/secondBtnRow"
+	    android:id="@+id/thirdBtnRow"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#ccddee"
@@ -116,11 +182,20 @@
 	    	android:background="#dddccc"
 	    	android:layout_marginLeft="3dp"
 	    	android:text="x"
-		    />	   	    
+		    />	  
+	   	<Button
+	    	android:id="@+id/btnX2"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="0.25"
+	    	android:background="#dddccc"
+	    	android:layout_marginLeft="3dp"
+	    	android:text="x\u00B2"
+		    />	 		    	    
     </TableRow> 	
 
 	<TableRow 
-	    android:id="@+id/thirdBtnRow"
+	    android:id="@+id/fourthBtnRow"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#ccddee"
@@ -162,17 +237,35 @@
 	    	android:background="#dddccc"
 	    	android:layout_marginLeft="3dp"
 	    	android:text="-"
-		    />	   	    
+		    />	
+	   	<Button
+	    	android:id="@+id/btnRaizY"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="0.25"
+	    	android:background="#dddccc"
+	    	android:layout_marginLeft="3dp"
+	    	android:text="\u207F\u221A"
+		    />	 		       	    
     </TableRow> 	
 
 	<TableRow
-	    android:id="@+id/fourthBtnRow" 
+	    android:id="@+id/fifthBtnRow" 
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#ccddee"
         android:layout_weight="1"
         >
-        
+
+	    <Button
+	    	android:id="@+id/btnDot"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="0.25"
+	    	android:background="#dddccc"
+	    	android:layout_marginLeft="3dp"
+	    	android:text="."
+		    />	    
 	    <Button
 	    	android:id="@+id/btn0"
 	    	android:layout_width="wrap_content"
@@ -182,15 +275,6 @@
 			android:layout_marginLeft="3dp"
 	    	android:text="0"
 	    	/>
-	    <Button
-	    	android:id="@+id/btnDot"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
-	    	android:layout_marginLeft="3dp"
-	    	android:text="."
-		    />
 	   	<Button
 	    	android:id="@+id/btnPercent"
 	    	android:layout_width="wrap_content"
@@ -208,27 +292,16 @@
 	    	android:background="#dddccc"
 	    	android:layout_marginLeft="3dp"
 	    	android:text="+"
-		    />	   	    
-    </TableRow> 	
-
-	<TableRow
-	    android:id="@+id/fifthBtnRow" 
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#ccddee"
-        android:layout_weight="1"
-        >
-        
-	    <Button
-	    	android:id="@+id/btnEquals"
+		    />	
+	   	<Button
+	    	android:id="@+id/btnXY"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:background="#dddccc"
-			android:layout_marginLeft="3dp"
-	    	android:text="="
-	    	/>
-   	    
-    </TableRow> 		
+	    	android:layout_weight="0.25"
+	    	android:background="#dddccc"
+	    	android:layout_marginLeft="3dp"
+	    	android:text="x\u207F"
+		    />	 		       	    
+    </TableRow> 	
 				
 </TableLayout>
