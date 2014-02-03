@@ -4,5 +4,34 @@
     <string name="app_name">Calculator</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="RB">(</string>
+    <string name="LB">)</string>
+    <string name="Undo">\u2190</string>
+    <string name="Clear">\u00A9</string>
+    <string name="Result">=</string>
+    <string name="Num0">0</string>
+    <string name="Num1">1</string>
+    <string name="Num2">2</string>
+    <string name="Num3">3</string>
+    <string name="Num4">4</string>
+    <string name="Num5">5</string>
+    <string name="Num6">6</string>
+    <string name="Num7">7</string>
+    <string name="Num8">8</string>
+    <string name="Num9">9</string>   
+    <string name="Div">\u00F7</string>
+    <string name="Raiz">\u221A</string>
+    <string name="Mult">x</string>
+    <string name="X2">x\u00B2</string>
+    <string name="Minus">-</string>
+    <string name="Plus">+</string>
+    <string name="RaizY">\u207F\u221A</string>
+    <string name="Dot">.</string>
+    <string name="Percent">%</string>
+    <string name="XY">x\u207F</string> 
+	<!-- 
+    <string name="LB">)</string>
+    -->
+
 
 </resources>

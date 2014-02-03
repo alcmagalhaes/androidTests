@@ -1,4 +1,5 @@
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -39,48 +40,48 @@
 
 	    <Button
 	    	android:id="@+id/btnRB"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 			android:layout_weight="0.25"
-			android:background="#dddccc"
 			android:layout_marginLeft="3dp"
-	    	android:text="("
+	    	android:text="@string/RB"
 	    	/>	    
 	    <Button
 	    	android:id="@+id/btnLB"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 			android:layout_weight="0.25"
-			android:background="#dddccc"
 			android:layout_marginLeft="3dp"
-	    	android:text=")"
+	    	android:text="@string/LB"
 	    	/>
 	    <Button
 	    	android:id="@+id/btnUndo"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="\u2190"
+	    	android:text="@string/Undo"
 		    />
 	   	<Button
 	    	android:id="@+id/btnClear"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="\u00A9"
+	    	android:text="@string/Clear"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnResult"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="="
+	    	android:text="@string/Result"
 		    />	   	    
     </TableRow>     
     
@@ -97,45 +98,45 @@
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 			android:layout_weight="0.25"
-			android:background="#dddccc"
+			style="@style/btnStyleBlackpearl"
 			android:layout_marginLeft="3dp"
-	    	android:text="7"
+	    	android:text="@string/Num7"
 	    	/>
 	    <Button
 	    	android:id="@+id/btn8"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="8"
+	    	android:text="@string/Num8"
 		    />
 	   	<Button
 	    	android:id="@+id/btn9"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="9"
+	    	android:text="@string/Num9"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnDiv"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="\u00F7"
+	    	android:text="@string/Div"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnRaiz"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="\u221A"
+	    	android:text="@string/Raiz"
 		    />			      	    
     </TableRow> 
 
@@ -152,45 +153,45 @@
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 			android:layout_weight="0.25"
-			android:background="#dddccc"
+			style="@style/btnStyleBlackpearl"
 			android:layout_marginLeft="3dp"
-	    	android:text="4"
+	    	android:text="@string/Num4"
 	    	/>
 	    <Button
 	    	android:id="@+id/btn5"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="5"
+	    	android:text="@string/Num5"
 		    />
 	   	<Button
 	    	android:id="@+id/btn6"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="6"
+	    	android:text="@string/Num6"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnMult"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="x"
+	    	android:text="@string/Mult"
 		    />	  
 	   	<Button
 	    	android:id="@+id/btnX2"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="x\u00B2"
+	    	android:text="@string/X2"
 		    />	 		    	    
     </TableRow> 	
 
@@ -207,45 +208,45 @@
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 			android:layout_weight="0.25"
-			android:background="#dddccc"
+			style="@style/btnStyleBlackpearl"
 			android:layout_marginLeft="3dp"
-	    	android:text="1"
+	    	android:text="@string/Num1"
 	    	/>
 	    <Button
 	    	android:id="@+id/btn2"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="2"
+	    	android:text="@string/Num2"
 		    />
 	   	<Button
 	    	android:id="@+id/btn3"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="3"
+	    	android:text="@string/Num3"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnMinus"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="-"
+	    	android:text="@string/Minus"
 		    />	
 	   	<Button
 	    	android:id="@+id/btnRaizY"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="\u207F\u221A"
+	    	android:text="@string/RaizY"
 		    />	 		       	    
     </TableRow> 	
 
@@ -262,46 +263,46 @@
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="."
+	    	android:text="@string/Dot"
 		    />	    
 	    <Button
 	    	android:id="@+id/btn0"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 			android:layout_weight="0.25"
-			android:background="#dddccc"
+			style="@style/btnStyleBlackpearl"
 			android:layout_marginLeft="3dp"
-	    	android:text="0"
+	    	android:text="@string/Dot"
 	    	/>
 	   	<Button
 	    	android:id="@+id/btnPercent"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="%"
+	    	android:text="@string/Percent"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnPlus"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="+"
+	    	android:text="@string/Plus"
 		    />	
 	   	<Button
 	    	android:id="@+id/btnXY"
 	    	android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content"
 	    	android:layout_weight="0.25"
-	    	android:background="#dddccc"
+	    	style="@style/btnStyleBlackpearl"
 	    	android:layout_marginLeft="3dp"
-	    	android:text="x\u207F"
+	    	android:text="@string/XY"
 		    />	 		       	    
-    </TableRow> 	
-				
+    </TableRow>
+		
 </TableLayout>
