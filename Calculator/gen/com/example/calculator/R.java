@@ -69,6 +69,7 @@ public final class R {
         public static final int Clear=0x7f050006;
         public static final int Div=0x7f050012;
         public static final int Dot=0x7f050019;
+        public static final int Infinite=0x7f05001c;
         public static final int LB=0x7f050004;
         public static final int Minus=0x7f050016;
         public static final int Mult=0x7f050014;
@@ -122,6 +123,7 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f060001;
+        public static final int bgStyleBlackpearl=0x7f060003;
         public static final int btnStyleBlackpearl=0x7f060002;
     }
 }

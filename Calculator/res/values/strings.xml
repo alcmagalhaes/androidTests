@@ -28,7 +28,8 @@
     <string name="RaizY">\u207F\u221A</string>
     <string name="Dot">.</string>
     <string name="Percent">%</string>
-    <string name="XY">x\u207F</string> 
+    <string name="XY">x\u207F</string>
+    <string name="Infinite">\u221E</string> 
 	<!-- 
     <string name="LB">)</string>
     -->

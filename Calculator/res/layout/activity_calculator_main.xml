@@ -7,81 +7,88 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/custom_btn_black_pearl"
     tools:context=".CalculatorMain" >
-
+    
     <TableRow
 		android:id="@+id/txtRow"         
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#ccddee"
+        android:layout_height="100dp"
+
         >
-	    <EditText
+	   <EditText
 	        android:id="@+id/txtDisplay"
+	        style="@style/bgStyleBlackpearl"
 	        android:layout_width="match_parent"
-	        android:layout_height="50dp"
+	        android:layout_height="100dp"
 	        android:ems="10"
 	        android:layout_span="3"
 	        android:inputType="number"
 	        android:layout_weight="1"
 		    android:lines="5"
-    		android:gravity="top|left"	        
+		    android:textSize="15sp"
+    		android:text="0"	        
 	        >
-	        <requestFocus/>
 	    </EditText>        
     </TableRow>
 
 	<TableRow
 		android:id="@+id/firstBtnRow"	     
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#ccddee"
+        android:layout_height="20dp"
+        style="@style/bgStyleBlackpearl"
         android:layout_weight="1"
         >
 
 	    <Button
 	    	android:id="@+id/btnRB"
 	    	style="@style/btnStyleBlackpearl"
+	    	android:text="@string/RB"
 	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
+			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-	    	android:text="@string/RB"
+			android:onClick="setNumber"
 	    	/>	    
 	    <Button
 	    	android:id="@+id/btnLB"
 	    	style="@style/btnStyleBlackpearl"
+	    	android:text="@string/LB"
 	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
+			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-	    	android:text="@string/LB"
+			android:onClick="setNumber"
 	    	/>
 	    <Button
 	    	android:id="@+id/btnUndo"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Undo"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />
 	   	<Button
 	    	android:id="@+id/btnClear"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Clear"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnResult"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Result"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	   	    
     </TableRow>     
     
@@ -89,54 +96,59 @@
 		android:id="@+id/secondBtnRow"	     
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#ccddee"
+        style="@style/bgStyleBlackpearl"
         android:layout_weight="1"
         >
         
 	    <Button
 	    	android:id="@+id/btn7"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-			android:layout_weight="0.25"
 			style="@style/btnStyleBlackpearl"
-			android:layout_marginLeft="3dp"
 	    	android:text="@string/Num7"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 	    	/>
 	    <Button
 	    	android:id="@+id/btn8"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Num8"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />
 	   	<Button
 	    	android:id="@+id/btn9"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Num9"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnDiv"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Div"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnRaiz"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Raiz"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />			      	    
     </TableRow> 
 
@@ -144,54 +156,59 @@
 	    android:id="@+id/thirdBtnRow"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#ccddee"
+        style="@style/bgStyleBlackpearl"
         android:layout_weight="1"
         >
         
 	    <Button
 	    	android:id="@+id/btn4"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-			android:layout_weight="0.25"
 			style="@style/btnStyleBlackpearl"
-			android:layout_marginLeft="3dp"
 	    	android:text="@string/Num4"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 	    	/>
 	    <Button
 	    	android:id="@+id/btn5"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Num5"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />
 	   	<Button
 	    	android:id="@+id/btn6"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Num6"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnMult"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Mult"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	  
 	   	<Button
 	    	android:id="@+id/btnX2"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/X2"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	 		    	    
     </TableRow> 	
 
@@ -199,54 +216,59 @@
 	    android:id="@+id/fourthBtnRow"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#ccddee"
+        style="@style/bgStyleBlackpearl"
         android:layout_weight="1"
         >
         
 	    <Button
 	    	android:id="@+id/btn1"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-			android:layout_weight="0.25"
 			style="@style/btnStyleBlackpearl"
-			android:layout_marginLeft="3dp"
 	    	android:text="@string/Num1"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 	    	/>
 	    <Button
 	    	android:id="@+id/btn2"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Num2"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />
 	   	<Button
 	    	android:id="@+id/btn3"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Num3"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnMinus"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Minus"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	
 	   	<Button
 	    	android:id="@+id/btnRaizY"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/RaizY"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	 		       	    
     </TableRow> 	
 
@@ -254,54 +276,59 @@
 	    android:id="@+id/fifthBtnRow" 
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#ccddee"
+        style="@style/bgStyleBlackpearl"
         android:layout_weight="1"
         >
 
 	    <Button
 	    	android:id="@+id/btnDot"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Dot"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	    
 	    <Button
 	    	android:id="@+id/btn0"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-			android:layout_weight="0.25"
 			style="@style/btnStyleBlackpearl"
+	    	android:text="@string/Num0"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-	    	android:text="@string/Dot"
+			android:onClick="setNumber"
 	    	/>
 	   	<Button
 	    	android:id="@+id/btnPercent"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Percent"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnPlus"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/Plus"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	
 	   	<Button
 	    	android:id="@+id/btnXY"
-	    	android:layout_width="wrap_content"
-	    	android:layout_height="wrap_content"
-	    	android:layout_weight="0.25"
 	    	style="@style/btnStyleBlackpearl"
-	    	android:layout_marginLeft="3dp"
 	    	android:text="@string/XY"
+	    	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.25"
+			android:layout_marginLeft="3dp"
+			android:onClick="setNumber"
 		    />	 		       	    
     </TableRow>
 		
