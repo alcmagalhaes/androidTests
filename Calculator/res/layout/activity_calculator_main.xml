@@ -8,14 +8,15 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/custom_btn_black_pearl"
-    tools:context=".CalculatorMain" >
+    tools:context=".CalculatorMain" 
+    >
     
     <TableRow
 		android:id="@+id/txtRow"         
         android:layout_width="match_parent"
         android:layout_height="100dp"
-
         >
+        
 	   <EditText
 	        android:id="@+id/txtDisplay"
 	        style="@style/bgStyleBlackpearl"
@@ -27,9 +28,9 @@
 	        android:layout_weight="1"
 		    android:lines="5"
 		    android:textSize="15sp"
-    		android:text="0"	        
 	        >
-	    </EditText>        
+	    </EditText>  
+	          
     </TableRow>
 
 	<TableRow
