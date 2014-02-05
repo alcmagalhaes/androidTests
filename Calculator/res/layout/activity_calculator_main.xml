@@ -49,7 +49,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick=""
 	    	/>	    
 	    <Button
 	    	android:id="@+id/btnLB"
@@ -59,7 +59,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick=""
 	    	/>
 	    <Button
 	    	android:id="@+id/btnUndo"
@@ -69,7 +69,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick="doUndo"
 		    />
 	   	<Button
 	    	android:id="@+id/btnClear"
@@ -79,7 +79,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick="doClear"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnResult"
@@ -89,7 +89,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick=""
 		    />	   	    
     </TableRow>     
     
@@ -139,7 +139,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick="calculate"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnRaiz"
@@ -149,7 +149,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick="calculate"
 		    />			      	    
     </TableRow> 
 
@@ -199,7 +199,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick="calculate"
 		    />	  
 	   	<Button
 	    	android:id="@+id/btnX2"
@@ -209,7 +209,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick="calculate"
 		    />	 		    	    
     </TableRow> 	
 
@@ -259,7 +259,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick="calculate"
 		    />	
 	   	<Button
 	    	android:id="@+id/btnRaizY"
@@ -269,7 +269,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick="calculate"
 		    />	 		       	    
     </TableRow> 	
 
@@ -309,7 +309,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick="calculate"
 		    />	 
 	   	<Button
 	    	android:id="@+id/btnPlus"
@@ -319,7 +319,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick="calculate"
 		    />	
 	   	<Button
 	    	android:id="@+id/btnXY"
@@ -329,7 +329,7 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="0.25"
 			android:layout_marginLeft="3dp"
-			android:onClick="setNumber"
+			android:onClick="calculate"
 		    />	 		       	    
     </TableRow>
 		
