@@ -14,7 +14,8 @@ public class CalculatorMain extends Activity {
 	double valX = 0;
 	static int opcounter = 0;
 	static int op = 0;
-	double varUndo;
+	double undo;
+	double resultado = 0;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +38,15 @@ public class CalculatorMain extends Activity {
 	}
 	
 	public void doUndo(View view) {
-		editText.setText(Double.toString(varUndo));
+		editText.setText(Double.toString(undo));
 	}
 	
 	public void doClear(View view) {
 		editText.setText("");
+	}
+	
+	public void resultado(View view) {
+		editText.setText(Double.toString(resultado));
 	}
 	
 	public void calculate(View view){
@@ -60,22 +65,22 @@ public class CalculatorMain extends Activity {
 			editText.setText("");
 		} else if (opcounter == 1) {
 			if (op == 1) {
-				varUndo = valX;
+				undo = valX;
 				valX = Double.parseDouble(editText.getText().toString()) + valX;
 				op = 0;
 				editText.setText(Double.toString(valX));
 			} else if (op == 2) {
-				varUndo = valX;
+				undo = valX;
 				valX = Double.parseDouble(editText.getText().toString()) - valX;
 				op = 0;
 				editText.setText(Double.toString(valX));
 			} else if (op == 3) {
-				varUndo = valX;
+				undo = valX;
 				valX = Double.parseDouble(editText.getText().toString()) * valX;
 				op = 0;
 				editText.setText(Double.toString(valX));
 			} else if (op == 4) {
-				varUndo = valX;
+				undo = valX;
 				valX = Double.parseDouble(editText.getText().toString()) / valX;
 				op = 0;
 				editText.setText(Double.toString(valX));
