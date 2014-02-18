@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 
@@ -28,7 +29,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
+		super.onCreateOptionsMenu(menu);
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
@@ -42,6 +43,16 @@ public class MainActivity extends Activity implements OnClickListener {
 			break;
 		}
 		
+	}
+	
+	public boolean onOptiotnsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.settings:
+			startActivity(new Intent(this, Prefs.class));
+			return true;
+		default:
+			return false;
+		}
 	}
 
 }
