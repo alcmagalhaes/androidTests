@@ -2,7 +2,10 @@ package com.whitebox.sudoku;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,6 +13,8 @@ import android.view.View.OnClickListener;
 
 public class MainActivity extends Activity implements OnClickListener {
 
+	private static final String TAG = "Sudoku" ;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -37,6 +42,12 @@ public class MainActivity extends Activity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
+		case R.id.new_button:
+			openNewGameDialog();
+			break;
+		case R.id.exit_button:
+			finish();
+			break;
 		case R.id.about_button:
 			Intent i = new Intent(this, About.class);
 			startActivity(i);
@@ -45,6 +56,21 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 	}
 	
+	private void openNewGameDialog() {
+		new AlertDialog.Builder(this)
+		.setTitle(R.string.new_game_title)
+		.setItems(R.array.difficulty,
+		new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialoginterface,int i) {
+				startGame(i);
+			}
+		}).show();
+	}
+
+	private void startGame(int i) {
+		Log.d(TAG, "clicked on " + i);
+	}
+
 	public boolean onOptiotnsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.settings:
