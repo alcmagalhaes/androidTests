@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-public class MainActivity extends Activity implements OnClickListener {
+public class Sudoku extends Activity implements OnClickListener {
 
 	private static final String TAG = "Sudoku" ;
 	
@@ -69,6 +69,9 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	private void startGame(int i) {
 		Log.d(TAG, "clicked on " + i);
+		Intent intent = new Intent(Sudoku.this, Game.class);
+		intent.putExtra(Game.KEY_DIFFICULTY, i);
+		startActivity(intent);
 	}
 
 	public boolean onOptiotnsItemSelected(MenuItem item) {
